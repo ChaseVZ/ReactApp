@@ -37,8 +37,7 @@ function TableHeader()  {
   
   function Table (props) {
     return (
-      <table 
-        className="styleTable">
+      <table className="styleTable">
         <TableHeader />
         <TableBody characterData={props.characterData} removeCharacter={props.removeCharacter} />
       </table>
