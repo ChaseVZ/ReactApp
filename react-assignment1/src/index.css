@@ -15,7 +15,7 @@
 
 .styleTable thead tr {
     background-color: #009879;
-    color: #000000;
+    color: white;
     text-align: left;
 }
 
@@ -32,4 +32,18 @@
     font-weight: bold;
     color: #009879
 }
+
+.btn{
+    border-radius: 6px;
+    background: transparent;
+    border: 2px solid #0099CC
+    /* background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);   */
+
+}
+
+.btn:hover {
+    background: #008CBA;
+    color: white;
+    /* text-decoration: none; */
+  }
 
