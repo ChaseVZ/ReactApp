@@ -12,6 +12,19 @@ function MyApp() {
         return i !== index
       });
       setCharacters(updated);
+      deletePerson(characters[index].id)
+  }
+
+  async function deletePerson(personID){
+    try {
+      const response = await axios.delete('http://localhost:5000/users/' + personID);
+      return response.data.users_list;     
+   }
+   catch (error){
+      //We're not handling errors. Just logging into the console.
+      console.log(error); 
+      return false;         
+   }
   }
 
   // function updateList(person) {
