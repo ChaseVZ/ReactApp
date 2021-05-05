@@ -22,7 +22,7 @@ function TableHeader()  {
         <tr key={index} className={"data"}>
           <td>{row.name}</td>
           <td>{row.job}</td>
-          <td>{row.id}</td>
+          <td>{row._id}</td>
           <td>
             <button className="btn" onClick={() => props.removeCharacter(index)}>Delete</button>
           </td>

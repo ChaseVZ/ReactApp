@@ -12,7 +12,7 @@ function MyApp() {
         return i !== index
       });
       setCharacters(updated);
-      deletePerson(characters[index].id)
+      deletePerson(characters[index]._id)
   }
 
   async function deletePerson(personID){
